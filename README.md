@@ -9,5 +9,6 @@ Install playsound from the following command:
 ```php
 $ pip install playsound
 ```
+Extract the source code from the release section
 
 Run the code
