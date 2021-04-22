@@ -12,28 +12,29 @@ baseNumber = float(input("Please type the base number : "))
 
 exponentNumber = float(input("Please type the exponent : "))
 
-output = baseNumber // exponentNumber;
- 
-ans = 1
+copyBaseNumber = baseNumber
+
+output = copyBaseNumber // exponentNumber;
+ans = -1
 
 while (output > 0):
   output2 = output // exponentNumber
+  
   print(output)
 
   ans = ans + 1
   
   output = output2 // exponentNumber
-
-  ans = ans + 1
   
   print(output2)
 
+  ans = ans + 1
+
 if output == 0:
-    playsound("answerFound.mp3")
+  print(ans)
 
-    ans = ans - 1
-    
-    print(ans)
+  playsound("answerFound.mp3")
 
+  print("answer found.")
 while 3 > 2:
     time.sleep(1)
