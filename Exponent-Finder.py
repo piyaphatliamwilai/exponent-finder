@@ -31,7 +31,7 @@ while (output > 0):
 if output == 0:
     playsound("answerFound.mp3")
 
-    ans = ans - 2
+    ans = ans - 1
     
     print(ans)
 
