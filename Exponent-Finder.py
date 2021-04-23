@@ -1,6 +1,6 @@
 # This project is open-sourced and you can do whatever you want with it! Feel free to fork or anything to this project.
 # This project is written in Python 3 and created by piyaphatliamwilai
-# If you are going to use this or use some of our codes, credit would be appreciated.
+# If you are going to use this or use some of my codes, credit would be appreciated.
 
 import time
 from playsound import playsound
@@ -14,27 +14,37 @@ exponentNumber = float(input("Please type the exponent : "))
 
 copyBaseNumber = baseNumber
 
-output = copyBaseNumber // exponentNumber;
 ans = -1
 
+output = baseNumber
+
 while (output > 0):
-  output2 = output // exponentNumber
   
   print(output)
-
-  ans = ans + 1
-  
-  output = output2 // exponentNumber
+  output2 = output // exponentNumber
   
   print(output2)
 
   ans = ans + 1
 
+  output = output2
+  
 if output == 0:
-  print(ans)
-
   playsound("answerFound.mp3")
 
   print("answer found.")
+
+  print("checking the answer ....")
+
+  print(ans)
+
+  answ1 = exponentNumber ** ans;
+  print(answ1)
+
+  if answ1 == baseNumber:
+    print("Answer Corrected!")
+
+  elif answ1 != baseNumber:
+    print("Answer incorrected, try checking exponent number or adding the answer by 1 or subtracting it by 1 and using calculator to power it.")
 while 3 > 2:
     time.sleep(1)
