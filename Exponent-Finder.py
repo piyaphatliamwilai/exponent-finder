@@ -28,6 +28,10 @@ while (output > 0):
   ans = ans + 1
 
   output = output2
+
+  ans = ans + 1
+
+  output = output // exponentNumber
   
 if output == 0:
   playsound("answerFound.mp3")
