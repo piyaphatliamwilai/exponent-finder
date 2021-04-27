@@ -12,7 +12,7 @@ $ pip install playsound
 
 Install plyer from the following command :
 
-```
+```php
 $ pip install plyer
 ```
 
