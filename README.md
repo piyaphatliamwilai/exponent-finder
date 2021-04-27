@@ -9,6 +9,13 @@ Install playsound from the following command:
 ```php
 $ pip install playsound
 ```
+
+Install plyer from the following command :
+
+```
+$ pip install plyer
+```
+
 Extract the source code from the release section
 
 Run the code
