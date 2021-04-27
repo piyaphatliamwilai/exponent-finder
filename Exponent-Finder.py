@@ -2,6 +2,7 @@
 # This project is written in Python 3 and created by piyaphatliamwilai
 # If you are going to use this or use some of my codes, credit would be appreciated.
 
+from plyer import notification
 import time
 from playsound import playsound
 
@@ -9,7 +10,6 @@ print("Thanks for using my exponent finder! Feel free to report bug at github.co
 print("I made this just for my math homework cause I'm lazy.")
 
 baseNumber = float(input("Please type the base number : "))
-
 exponentNumber = float(input("Please type the exponent : "))
 
 copyBaseNumber = baseNumber
@@ -38,6 +38,9 @@ if output == 0:
 
   print("answer found.")
 
+  notification.notify(
+    title= 'Exponent Finder v0.0.3 - Notifications',
+    message='Answer Founded!')
   print("checking the answer ....")
 
   print(ans)
