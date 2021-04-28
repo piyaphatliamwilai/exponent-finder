@@ -23,15 +23,9 @@ while (output > 0):
   print(output)
   output2 = output // exponentNumber
   
-  print(output2)
-
   ans = ans + 1
 
   output = output2
-
-  ans = ans + 1
-
-  output = output // exponentNumber
   
 if output == 0:
   playsound("answerFound.mp3")
